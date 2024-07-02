@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>LEGACY LANE</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#exhibits">Exhibits</a></li>
+                    <li><a href="#visit">Visit</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Explore the Wonders of History</h2>
+            <p>Discover artifacts from around the world</p>
+            <button onclick="showAlert()">Plan Your Visit</button>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>The City Museum is dedicated to preserving and showcasing historical artifacts from various cultures. Our mission is to educate and inspire visitors of all ages.</p>
+        </div>
+    </section>
+    <section id="exhibits" class="exhibits">
+        <div class="container">
+            <h2>Featured Exhibits</h2>
+            <div class="exhibit-carousel">
+                <div class="exhibit" data-exhibit="1">
+                    <img src="exhibit1.jpg" alt="Exhibit 1">
+                    <h3>Ancient Egypt</h3>
+                    <p>Experience the wonders of ancient Egypt, including mummies, hieroglyphs, and more.</p>
+                </div>
+                <div class="exhibit" data-exhibit="2">
+                    <img src="exhibit2.jpg" alt="Exhibit 2">
+                    <h3>Medieval Europe</h3>
+                    <p>Explore the medieval period with artifacts like armor, manuscripts, and relics.</p>
+                </div>
+                <div class="exhibit" data-exhibit="3">
+                    <img src="exhibit3.jpg" alt="Exhibit 3">
+                    <h3>Modern Art</h3>
+                    <p>Discover the creativity of modern artists through paintings, sculptures, and installations.</p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+    </section>
+    <section id="visit" class="visit">
+        <div class="container">
+            <h2>Plan Your Visit</h2>
+            <form>
+                <label for="email">Subscribe for updates:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Enter your message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 City Museum. All rights reserved.</p>
+        </div>
+    </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Special Announcement</h2>
+            <p>We have a special exhibition starting next month. Stay tuned for more details!</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
